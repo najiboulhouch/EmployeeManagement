@@ -1,0 +1,18 @@
+package net.najiboulhouch.gestionpersonnel.api;
+
+import net.najiboulhouch.gestionpersonnel.entities.Contrat;
+import org.springframework.web.bind.annotation.*;
+
+/**
+ * @author Najib OULHOUCH
+ * @version 1.0
+ */
+
+@CrossOrigin(origins = "http://localhost:4200")
+@RestController
+@RequestMapping(path = "api/v1/contrats")
+public class ContratController extends BaseController<Contrat>  {
+
+
+
+}

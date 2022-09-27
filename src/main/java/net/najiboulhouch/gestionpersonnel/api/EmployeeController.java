@@ -21,7 +21,7 @@ import java.util.List;
  */
 
 @RequestMapping(path = "api/v1/employees")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://employeemanagementfrontapp.herokuapp.com/")
 @RestController
 public class EmployeeController extends BaseController<Employee> {
 

@@ -14,7 +14,7 @@ import javax.validation.Valid;
  * @version 1.0
  */
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://employeemanagementfrontapp.herokuapp.com/")
 @RestController
 @RequestMapping(path = "api/v1/payments")
 public class PayementController extends BaseController<Payment> {

@@ -18,7 +18,7 @@ import java.util.List;
  * @version 1.0
  */
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://employeemanagementfrontapp.herokuapp.com/")
 @RestController
 @RequestMapping(path = "api/v1/absences")
 public class AbsenceController extends BaseController<Absence>{

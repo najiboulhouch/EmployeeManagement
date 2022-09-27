@@ -75,36 +75,36 @@ INSERT INTO tab_employees (id, adresse, cin, date_naissance, email, etat_civil, 
 INSERT INTO tab_employees (id, adresse, cin, date_naissance, email, etat_civil, lieu_naissance, nationalite, nom, num_tel, photo, prenom, salaire, fonction_id) VALUES(69, '1827 Oakridge Street', '3031558731', '2013-05-07 00:00:00', 'fbraun1w@yale.edu', 2, 'Fes', 'Marocaine', 'Felic', '548-252-5416', 'avatar3.jpg', 'Braun', 2000, 6);
 INSERT INTO tab_employees (id, adresse, cin, date_naissance, email, etat_civil, lieu_naissance, nationalite, nom, num_tel, photo, prenom, salaire, fonction_id) VALUES(70, '9635 Sundown Terrace', '9488898089', '2018-12-07 00:00:00', 'nheartfield1x@icio.us', 0, 'Fes', 'Marocaine', 'Nikos', '801-601-4677', 'photo.jpg', 'Heartfield', 6000, 2);
 
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(1, '2022-06-01', '2022-08-02', b'1', 'Congé', 0, 10);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(2, '2022-06-30', '2022-08-08', b'0', 'Retard', 3, 3);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(3, '2022-05-06', '2022-07-26', b'0', 'Congé', 1, 22);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(4, '2022-06-23', '2022-07-03', b'1', 'Certificat', 0, 12);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(5, '2022-05-17', '2022-07-23', b'0', 'Certificat', 1, 6);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(6, '2022-05-06', '2022-07-17', b'0', 'Retard', 2, 14);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(7, '2022-06-07', '2022-07-09', b'0', 'Retard', 0, 6);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(8, '2022-06-26', '2022-08-07', b'0', 'Congé', 1, 6);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(9, '2022-05-26', '2022-07-17', b'1', 'Retard', 1, 5);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(10, '2022-05-21', '2022-08-13', b'1', 'Retard', 2, 20);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(11, '2022-06-26', '2022-08-07', b'1', 'Certificat', 0, 3);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(12, '2022-06-27', '2022-08-16', b'0', 'Certificat', 0, 55);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(13, '2022-05-31', '2022-07-04', b'0', 'Retard', 0, 50);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(14, '2022-06-13', '2022-07-07', b'0', 'Retard', 3, 10);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(15, '2022-06-27', '2022-07-17', b'1', 'Certificat', 3, 55);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(16, '2022-06-15', '2022-07-21', b'0', 'Congé', 3, 11);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(17, '2022-05-16', '2022-07-20', b'1', 'Congé', 0, 15);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(18, '2022-05-11', '2022-07-31', b'0', 'Certificat', 0, 55);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(19, '2022-06-22', '2022-07-29', b'1', 'Retard', 2, 9);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(20, '2022-05-30', '2022-08-08', b'1', 'Congé', 2, 9);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(21, '2022-05-23', '2022-07-31', b'0', 'Congé', 2, 1);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(22, '2022-05-05', '2022-07-21', b'1', 'Retard', 3, 1);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(23, '2022-05-04', '2022-08-10', b'1', 'Retard', 3, 11);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(24, '2022-06-27', '2022-07-10', b'1', 'Certificat', 3, 4);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(25, '2022-06-12', '2022-07-27', b'1', 'Congé', 0, 12);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(26, '2022-06-15', '2022-07-10', b'1', 'Certificat', 1, 1);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(27, '2022-06-06', '2022-08-06', b'1', 'Congé', 1, 15);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(28, '2022-06-21', '2022-07-24', b'0', 'Congé', 1, 11);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(29, '2022-06-01', '2022-07-20', b'0', 'Retard', 1, 12);
-INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(30, '2022-06-19', '2022-07-16', b'1', 'Retard', 3, 20);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(1, '2022-06-01', '2022-08-02', true, 'Congé', 0, 10);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(2, '2022-06-30', '2022-08-08', true, 'Retard', 3, 3);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(3, '2022-05-06', '2022-07-26', true, 'Congé', 1, 22);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(4, '2022-06-23', '2022-07-03', false, 'Certificat', 0, 12);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(5, '2022-05-17', '2022-07-23', true, 'Certificat', 1, 6);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(6, '2022-05-06', '2022-07-17', false, 'Retard', 2, 14);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(7, '2022-06-07', '2022-07-09', true, 'Retard', 0, 6);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(8, '2022-06-26', '2022-08-07', true, 'Congé', 1, 6);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(9, '2022-05-26', '2022-07-17', false, 'Retard', 1, 5);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(10, '2022-05-21', '2022-08-13', false, 'Retard', 2, 20);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(11, '2022-06-26', '2022-08-07', false, 'Certificat', 0, 3);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(12, '2022-06-27', '2022-08-16', true, 'Certificat', 0, 55);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(13, '2022-05-31', '2022-07-04', true, 'Retard', 0, 50);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(14, '2022-06-13', '2022-07-07', true, 'Retard', 3, 10);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(15, '2022-06-27', '2022-07-17', false, 'Certificat', 3, 55);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(16, '2022-06-15', '2022-07-21', true, 'Congé', 3, 11);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(17, '2022-05-16', '2022-07-20', false, 'Congé', 0, 15);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(18, '2022-05-11', '2022-07-31', true, 'Certificat', 0, 55);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(19, '2022-06-22', '2022-07-29', false, 'Retard', 2, 9);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(20, '2022-05-30', '2022-08-08', false, 'Congé', 2, 9);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(21, '2022-05-23', '2022-07-31', true, 'Congé', 2, 1);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(22, '2022-05-05', '2022-07-21', false, 'Retard', 3, 1);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(23, '2022-05-04', '2022-08-10', false, 'Retard', 3, 11);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(24, '2022-06-27', '2022-07-10', false, 'Certificat', 3, 4);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(25, '2022-06-12', '2022-07-27', false, 'Congé', 0, 12);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(26, '2022-06-15', '2022-07-10', false, 'Certificat', 1, 1);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(27, '2022-06-06', '2022-08-06', false, 'Congé', 1, 15);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(28, '2022-06-21', '2022-07-24', true, 'Congé', 1, 11);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(29, '2022-06-01', '2022-07-20', true, 'Retard', 1, 12);
+INSERT INTO tab_absences (id, date_debut, date_fin, is_justifie, justification, type_absence, employee_id) VALUES(30, '2022-06-19', '2022-07-16', false, 'Retard', 3, 20);
 
 
 INSERT INTO tab_payments (id, date_payment, salaire, employee_id) VALUES(5, '2022-05-06', 4000, 1);
@@ -138,5 +138,5 @@ INSERT INTO tab_payments (id, date_payment, salaire, employee_id) VALUES(32, '20
 INSERT INTO tab_payments (id, date_payment, salaire, employee_id) VALUES(33, '2022-05-13', 3000, 8);
 INSERT INTO tab_payments (id, date_payment, salaire, employee_id) VALUES(34, '2022-05-27', 3000, 16);
 
-INSERT INTO tab_users (id, active, address, email, name, password, phone, role) VALUES(1, b'1', '124 rue des binelles', 'najib@gmail.com', 'NAJIB', '$2a$10$VwBKHLBEVEsPAwP6rcrMruGe/t0JCbUutDmtUynT8aGK5uEkuCPuS', '067845545', 'ROLE_ADMIN');
+INSERT INTO tab_users (id, active, address, email, name, password, phone, role) VALUES(1, false, '124 rue des binelles', 'najib@gmail.com', 'NAJIB', '$2a$10$VwBKHLBEVEsPAwP6rcrMruGe/t0JCbUutDmtUynT8aGK5uEkuCPuS', '067845545', 'ROLE_ADMIN');
 

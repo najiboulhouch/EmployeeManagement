@@ -138,5 +138,5 @@ INSERT INTO tab_payments (id, date_payment, salaire, employee_id) VALUES(32, '20
 INSERT INTO tab_payments (id, date_payment, salaire, employee_id) VALUES(33, '2022-05-13', 3000, 8);
 INSERT INTO tab_payments (id, date_payment, salaire, employee_id) VALUES(34, '2022-05-27', 3000, 16);
 
-INSERT INTO tab_users (id, active, address, email, name, password, phone, role) VALUES(1, false, '124 rue des binelles', 'najib@gmail.com', 'NAJIB', '$2a$10$VwBKHLBEVEsPAwP6rcrMruGe/t0JCbUutDmtUynT8aGK5uEkuCPuS', '067845545', 'ROLE_ADMIN');
+INSERT INTO tab_users (id, active, address, email, name, password, phone, role) VALUES(1, true, '124 rue des binelles', 'najib@gmail.com', 'NAJIB', '$2a$10$VwBKHLBEVEsPAwP6rcrMruGe/t0JCbUutDmtUynT8aGK5uEkuCPuS', '067845545', 'ROLE_ADMIN');
 

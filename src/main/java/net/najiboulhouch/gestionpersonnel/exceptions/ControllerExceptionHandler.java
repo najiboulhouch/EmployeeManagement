@@ -22,13 +22,13 @@ public class ControllerExceptionHandler {
         return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler({Exception.class})
     public ResponseEntity<ErrorMessage> globalExceptionHandler(Exception ex, WebRequest request) {
 
         ErrorMessage message = new ErrorMessage(
                 HttpStatus.INTERNAL_SERVER_ERROR.value(),
                 new Date(),
-                ex.getMessage().contains("UK_jo33yevyo755d01edn71in7ju") ? "CIN not exsits" : ex.getMessage() ,
+                "Perhaps Technical problem..",
                 request.getDescription(false));
 
         return new ResponseEntity<>(message, HttpStatus.INTERNAL_SERVER_ERROR);

@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -21,7 +23,6 @@ import java.util.List;
  */
 
 @RequestMapping(path = "api/v1/employees")
-@CrossOrigin(origins = "https://employeemanagementfrontapp.herokuapp.com/")
 @RestController
 public class EmployeeController extends BaseController<Employee> {
 
@@ -40,21 +41,6 @@ public class EmployeeController extends BaseController<Employee> {
         return new ResponseEntity<>( employees, HttpStatus.OK );
     }
 
-    @GetMapping(path="photoEmployee/{id}",produces = MediaType.IMAGE_PNG_VALUE)
-    public byte[] getPhoto(@PathVariable("id") Long id) throws Exception{
-        Employee employee = getEntity(id , EMPLOYEE_NOT_EXIST_MESSAGE);
-        return Files.readAllBytes(Paths.get(System.getProperty("user.home")+"/"+employee.getPhoto()));
-    }
-
-
-    @PostMapping(path = "/uploadPhoto/{id}")
-    public void uploadPhoto(MultipartFile file, @PathVariable Long id) throws Exception{
-        Employee employee=getEntity(id , EMPLOYEE_NOT_EXIST_MESSAGE);
-        employee.setPhoto(file.getOriginalFilename());
-        Files.write(Paths.get(System.getProperty("user.home")+"/"+employee.getPhoto()),file.getBytes());
-        employeeService.save(employee);
-    }
-
 
     @PutMapping("/{id}")
     public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId ,
@@ -70,6 +56,7 @@ public class EmployeeController extends BaseController<Employee> {
         employee.setLieuNaissance(employeeDetails.getLieuNaissance());
         employee.setSalaire(employeeDetails.getSalaire());
         employee.setNumTel(employeeDetails.getNumTel());
+        employee.setPhoto(employeeDetails.getPhoto());
         employee.setNationalite(employeeDetails.getNationalite());
         employee.setEtatCivil(employeeDetails.getEtatCivil());
         employee.setEmail(employeeDetails.getEmail());

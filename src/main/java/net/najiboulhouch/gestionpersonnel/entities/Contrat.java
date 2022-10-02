@@ -1,12 +1,10 @@
 package net.najiboulhouch.gestionpersonnel.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Table(name = "tab_contrats")
@@ -14,8 +12,9 @@ import java.util.Date;
 @Entity()
 public class Contrat extends  BaseEntity{
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id")
+    @JsonBackReference
     private Employee employee;
     private String numeroContrat;
     @Type(type="date")
@@ -23,4 +22,15 @@ public class Contrat extends  BaseEntity{
     @Type(type="date")
     private Date dateFin;
     private boolean isCourant;
+
+    @Override
+    public String toString() {
+        return "Contrat{" +
+                "employee=" + employee +
+                ", numeroContrat='" + numeroContrat + '\'' +
+                ", dateDebut=" + dateDebut +
+                ", dateFin=" + dateFin +
+                ", isCourant=" + isCourant +
+                '}';
+    }
 }

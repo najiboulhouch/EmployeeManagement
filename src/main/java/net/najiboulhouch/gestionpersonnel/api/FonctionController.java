@@ -16,7 +16,6 @@ import java.util.List;
  * @version 1.0
  */
 
-@CrossOrigin(origins = "https://employeemanagementfrontapp.herokuapp.com/")
 @RestController
 @RequestMapping(path = "api/v1/fonctions")
 public class FonctionController extends BaseController<Fonction> {

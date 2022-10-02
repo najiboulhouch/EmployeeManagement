@@ -1,5 +1,6 @@
 package net.najiboulhouch.gestionpersonnel.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import org.hibernate.annotations.Type;
 
@@ -18,6 +19,15 @@ public class Payment extends BaseEntity{
     private Date datePayment;
     @ManyToOne
     @JoinColumn(name = "employee_id")
+    @JsonBackReference
     private Employee employee;
 
+    @Override
+    public String toString() {
+        return "Payment{" +
+                "salaire=" + salaire +
+                ", datePayment=" + datePayment +
+                ", employee=" + employee +
+                '}';
+    }
 }

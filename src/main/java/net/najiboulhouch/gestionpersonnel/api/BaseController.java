@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +36,7 @@ public abstract class BaseController<T extends BaseEntity> {
         return new ResponseEntity<>(entities , HttpStatus.OK );
     }
 
-    @PostMapping("/")
+    @PostMapping(value = "/" , produces = MediaType.APPLICATION_JSON_VALUE)
     public T createEntity(@Valid @RequestBody T entity) {
         return baseService.save(entity);
     }

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
  * @version 1.0
  */
 
-@CrossOrigin(origins = "https://employeemanagementfrontapp.herokuapp.com/")
 @RestController
 @RequestMapping(path = "api/v1/contrats")
 public class ContratController extends BaseController<Contrat>  {

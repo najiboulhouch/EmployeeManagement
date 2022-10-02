@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.najiboulhouch.gestionpersonnel.enums.EtatCivil;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -20,6 +21,7 @@ public class Employee  extends  BaseEntity{
     private String cin;
     private String nom;
     private String prenom ;
+    @Type(type="date")
     private Date dateNaissance;
     private String lieuNaissance;
     private String adresse;
@@ -31,13 +33,21 @@ public class Employee  extends  BaseEntity{
     @ManyToOne
     @JoinColumn(name = "fonction_id")
     private Fonction fonction;
-    @Column(nullable = true, length = 64)
+
+    @Column(length = 1024)
     private String photo;
 
-    @OneToMany(mappedBy = "employee" ,cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY, orphanRemoval = true)
+    @OneToMany(mappedBy = "employee" ,cascade = CascadeType.REMOVE)
     @JsonManagedReference
     private List<Absence> absences;
+
+    @OneToMany(mappedBy = "employee" ,cascade = CascadeType.REMOVE)
+    @JsonManagedReference
+    private List<Contrat> contrats;
+
+    @OneToMany(mappedBy = "employee" ,cascade = CascadeType.REMOVE)
+    @JsonManagedReference
+    private List<Payment> payments;
 
 
     @Override

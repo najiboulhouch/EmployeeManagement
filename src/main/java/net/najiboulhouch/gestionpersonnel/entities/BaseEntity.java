@@ -9,7 +9,8 @@ import javax.persistence.*;
 @Data
 public class BaseEntity {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @SequenceGenerator(name="pk_sequence",sequenceName="entity_id_seq", allocationSize=1  , initialValue = 80 )
+    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator="pk_sequence" )
     @Column(name="ID")
     private Long id;
 }

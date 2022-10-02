@@ -24,10 +24,11 @@ public class GestionPersonnelApplication {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
+        return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**");
+                registry.addMapping("/**").allowedOrigins("https://employeemanagementfrontapp.herokuapp.com/")
+                        .allowedMethods("POST" ,"GET" , "DELETE" , "PUT" );
             }
         };
     }

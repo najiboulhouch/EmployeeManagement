@@ -16,7 +16,7 @@ public class Absence extends BaseEntity{
     private Date dateDebut;
     @Type(type="date")
     private Date dateFin;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id")
     @JsonBackReference
     private Employee employee;
@@ -25,4 +25,17 @@ public class Absence extends BaseEntity{
     private Long employeeId;
     private boolean isJustifie;
     private String justification;
+
+    @Override
+    public String toString() {
+        return "Absence{" +
+                "dateDebut=" + dateDebut +
+                ", dateFin=" + dateFin +
+                ", employee=" + employee +
+                ", typeAbsence=" + typeAbsence +
+                ", employeeId=" + employeeId +
+                ", isJustifie=" + isJustifie +
+                ", justification='" + justification + '\'' +
+                '}';
+    }
 }

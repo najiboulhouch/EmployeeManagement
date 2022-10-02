@@ -22,7 +22,6 @@ import java.security.Principal;
  * @version 1.0
  */
 
-@CrossOrigin(origins = "https://employeemanagementfrontapp.herokuapp.com/")
 @RestController
 @RequestMapping(path = "api/v1")
 public class UserController {

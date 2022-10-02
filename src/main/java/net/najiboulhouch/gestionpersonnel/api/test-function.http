@@ -1,0 +1,50 @@
+POST {{host-url}}/login
+Content-Type: application/json
+
+{
+  "username" : "najib@gmail.com",
+  "password": "1234"
+}
+
+###
+
+GET {{host-url}}/fonctions/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/fonctions/fonctionsForList
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/fonctions/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+POST {{host-url}}/fonctions/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "label": "Docker Engineer",
+  "description": "Docker Engineer"
+}
+
+###
+
+###
+
+DELETE {{host-url}}/fonctions/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###

@@ -1,0 +1,76 @@
+###
+
+POST {{host-url}}/login
+Content-Type: application/json
+
+{
+    "username" : "najib@gmail.com",
+    "password": "1234"
+}
+
+###
+
+GET {{host-url}}/absences/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/absences/getNbrAbsenceByEmployee/20
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/absences/getNbrCongeByEmployee/10
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/absences/getAbsenceEmploye/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/absences/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+POST {{host-url}}/absences/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "dateDebut": "2022-07-01",
+  "dateFin": "2022-07-10",
+  "typeAbsence": "ADMINISTRATIVE_LEAVE",
+  "justification": "test",
+  "justifie": true ,
+  "employee" : {
+    "id" : 3
+  }
+}
+
+###
+
+###
+
+DELETE {{host-url}}/absences/81
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+

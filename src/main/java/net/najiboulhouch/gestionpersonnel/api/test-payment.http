@@ -1,0 +1,43 @@
+POST {{host-url}}/login
+Content-Type: application/json
+
+{
+  "username" : "najib@gmail.com",
+  "password": "1234"
+}
+
+###
+
+GET {{host-url}}/payments/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+
+###
+
+GET {{host-url}}/payments/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+POST {{host-url}}/payments/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "salaire": 4000.0,
+  "datePayment": "2022-05-06"
+}
+
+###
+
+###
+
+DELETE {{host-url}}/payments/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###

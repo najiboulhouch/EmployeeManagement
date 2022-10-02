@@ -1,0 +1,66 @@
+###
+
+POST {{host-url}}/login
+Content-Type: application/json
+
+{
+    "username" : "najib@gmail.com",
+    "password": "1234"
+}
+
+###
+
+GET {{host-url}}/employees/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/employees/employeesForList/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+###
+
+GET {{host-url}}/employees/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+POST {{host-url}}/employees/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "cin": "30603910702",
+  "nom": "Gerti",
+  "prenom": "Hayen",
+  "dateNaissance": "2005-03-11",
+  "lieuNaissance": "Fes",
+  "adresse": "532 Merry Terrace",
+  "nationalite": "Marocaine",
+  "etatCivil": "MARRIED",
+  "numTel": "646-240-0322",
+  "salaire": 4000.0,
+  "email": "ghayen1@1und1.de",
+  "fonction": {
+    "id": 4
+  }
+}
+
+###
+
+###
+
+DELETE {{host-url}}/employees/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+

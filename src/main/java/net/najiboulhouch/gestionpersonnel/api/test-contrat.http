@@ -1,0 +1,48 @@
+POST {{host-url}}/login
+Content-Type: application/json
+
+{
+  "username" : "najib@gmail.com",
+  "password": "1234"
+}
+
+###
+
+GET {{host-url}}/contrats/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+
+###
+
+GET {{host-url}}/contrats/82
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+POST {{host-url}}/contrats/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "numeroContrat" :"d7457",
+  "dateDebut" : "2022-02-02",
+  "dateFin" : "2022-03-02",
+  "courant" : true,
+  "employee" : {
+    "id":1
+  }
+}
+
+###
+
+###
+
+DELETE {{host-url}}/contrats/82
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
